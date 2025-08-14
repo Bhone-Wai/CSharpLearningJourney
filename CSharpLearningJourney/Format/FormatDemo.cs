@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace CSharpLearningJourney.Format;
 
 public class FormatDemo
@@ -14,5 +16,7 @@ public class FormatDemo
         Console.WriteLine(string.Format("${0:0.00}", money));
         Console.WriteLine(money.ToString("C"));
         Console.WriteLine(money.ToString("C1"));
+
+        Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
     }
 }
