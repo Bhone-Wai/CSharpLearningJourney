@@ -6,14 +6,20 @@ using CSharpLearningJourney.Boolean;
 using CSharpLearningJourney.ConditionalOperator;
 using CSharpLearningJourney.ConsoleIO;
 using CSharpLearningJourney.Constants;
+using CSharpLearningJourney.EmptyString;
 using CSharpLearningJourney.Exercise;
 using CSharpLearningJourney.For;
 using CSharpLearningJourney.Format;
 using CSharpLearningJourney.If;
 using CSharpLearningJourney.Modulus;
 using CSharpLearningJourney.Operations;
+using CSharpLearningJourney.StringEqualsFunction;
+using CSharpLearningJourney.StringFormatting;
+using CSharpLearningJourney.StringInterpolation;
 using CSharpLearningJourney.Switch;
+using CSharpLearningJourney.TryParse;
 using CSharpLearningJourney.Var;
+using CSharpLearningJourney.VerbatimStringLiteral;
 using CSharpLearningJourney.While;
 
 namespace CSharpLearningJourney
@@ -40,6 +46,14 @@ namespace CSharpLearningJourney
             Console.WriteLine("14 While Demo");
             Console.WriteLine("15 Conditional Operator Demo");
             Console.WriteLine("16 Format Demo");
+            Console.WriteLine("17 Try Parse Demo");
+            Console.WriteLine("18 Times Table Exercise Demo");
+            Console.WriteLine("19 FizzBuzz Exercise Demo");
+            Console.WriteLine("20 Verbatim String Literal Demo");
+            Console.WriteLine("21 String Format Demo");
+            Console.WriteLine("22 String Interpolation Demo");
+            Console.WriteLine("23 Empty String Demo");
+            Console.WriteLine("24 String Equals Demo");
             Console.WriteLine("0. Exit");
             Console.Write("Enter your choice: ");
 
@@ -110,6 +124,38 @@ namespace CSharpLearningJourney
                 case "16":
                     Console.WriteLine("\n--- Running Format Demo ---");
                     FormatDemo.Run();
+                    break;
+                case "17":
+                    Console.WriteLine("\n--- Running Try Parse Demo ---");
+                    TryParseDemo.Run();
+                    break;
+                case "18":
+                    Console.WriteLine("\n--- Running Times Table Exercise Demo ---");
+                    ExerciseTimesTable.TimesTableDemo.Run();
+                    break;
+                case "19":
+                    Console.WriteLine("\n--- Running FizzBuzz Exercise Demo ---");
+                    ExerciseFizzBuzzGame.FizzBuzzGameDemo.Run();
+                    break;
+                case "20":
+                    Console.WriteLine("\n--- Running Verbatim String Literal Demo ---");
+                    VerbatimStringLiteralDemo.Run();
+                    break;
+                case "21":
+                    Console.WriteLine("\n--- Running String Format Demo ---");
+                    StringFormattingDemo.Run();
+                    break;
+                case "22":
+                    Console.WriteLine("\n--- Running String Interpolation Demo ---");
+                    StringInterpolationDemo.Run();
+                    break;
+                case "23":
+                    Console.WriteLine("\n--- Running Empty String Demo ---");
+                    EmptyStringDemo.Run();
+                    break;
+                case "24":
+                    Console.WriteLine("\n--- Running String Equals Demo ---");
+                    StringEqualsFunctionDemo.Run();
                     break;
                 case "0":
                     Console.WriteLine("Goodbye!");
