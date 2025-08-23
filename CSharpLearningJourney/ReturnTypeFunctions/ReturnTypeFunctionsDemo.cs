@@ -28,16 +28,34 @@ public class ReturnTypeFunctionsDemo
         {
             Console.Write($"{num} ");
         }
+
+        Console.WriteLine(Add());
+    }
+
+    static void Something()
+    {
+        // Conversion
+        // Calculation
+    }
+
+    static void Conversion()
+    {
+        
+    }
+
+    static void Calculation()
+    {
+        
+    }
+
+    static int Add()
+    {
+        return 5 + 5;
     }
 
     static int[] CreateRandomArray()
     {
-        int[] numbers = new int[3]
-        {
-            0, 1, 2
-        };
-
-        return numbers;
+        return new int[3] { 1, 2, 3 };
     }
     
     static int ReadNumberConsole()

@@ -14,18 +14,28 @@ using CSharpLearningJourney.ConsoleIO;
 using CSharpLearningJourney.Constants;
 using CSharpLearningJourney.Dictionary;
 using CSharpLearningJourney.EmptyString;
+using CSharpLearningJourney.ExceptionHandling;
 using CSharpLearningJourney.Exercise;
+using CSharpLearningJourney.ExerciseAreaOfTriangle;
+using CSharpLearningJourney.ExerciseCustomTryParse;
+using CSharpLearningJourney.ExerciseSumOfIntArray;
 using CSharpLearningJourney.For;
 using CSharpLearningJourney.Format;
+using CSharpLearningJourney.FunctionParameters;
 using CSharpLearningJourney.Functions;
 using CSharpLearningJourney.If;
 using CSharpLearningJourney.IsNullOrEmpty;
 using CSharpLearningJourney.Lists;
 using CSharpLearningJourney.Modulus;
+using CSharpLearningJourney.NamedParameters;
 using CSharpLearningJourney.NumberSplit;
 using CSharpLearningJourney.Operations;
+using CSharpLearningJourney.OptionalParameters;
+using CSharpLearningJourney.OutParameters;
 using CSharpLearningJourney.PasswordChecker;
+using CSharpLearningJourney.PrintingErrorMessages;
 using CSharpLearningJourney.PrintStringInReverse;
+using CSharpLearningJourney.ReferenceParameters;
 using CSharpLearningJourney.ReturnTypeFunctions;
 using CSharpLearningJourney.StringEqualsFunction;
 using CSharpLearningJourney.StringFormatting;
@@ -33,6 +43,7 @@ using CSharpLearningJourney.StringInterpolation;
 using CSharpLearningJourney.StringIteration;
 using CSharpLearningJourney.Switch;
 using CSharpLearningJourney.Triangle;
+using CSharpLearningJourney.TryCatch;
 using CSharpLearningJourney.TryParse;
 using CSharpLearningJourney.Var;
 using CSharpLearningJourney.VerbatimStringLiteral;
@@ -88,6 +99,17 @@ namespace CSharpLearningJourney
             Console.WriteLine("39 Functions Demo");
             Console.WriteLine("40 Void Functions Demo");
             Console.WriteLine("41 Return Types Functions Demo");
+            Console.WriteLine("42 Function Parameters Demo");
+            Console.WriteLine("43 Optional Parameters Demo");
+            Console.WriteLine("44 Named Parameters Demo");
+            Console.WriteLine("45 Out Parameters Demo");
+            Console.WriteLine("46 Reference Parameters Demo");
+            Console.WriteLine("47 Exercise Area Of Triangle Demo");
+            Console.WriteLine("48 Exercise Sum Of Int Array Demo");
+            Console.WriteLine("49 Exception Handling Demo");
+            Console.WriteLine("50 Try Catch Demo");
+            Console.WriteLine("51 Printing Error Messages Demo");
+            Console.WriteLine("52 Exercise Custom Try Parse Demo");
             Console.WriteLine("0. Exit");
             Console.Write("Enter your choice: ");
 
@@ -258,6 +280,50 @@ namespace CSharpLearningJourney
                 case "41":
                     Console.WriteLine("\n--- Running Return Types Functions Demo ---");
                     ReturnTypeFunctionsDemo.Run();
+                    break;
+                case "42":
+                    Console.WriteLine("\n--- Running Function Parameters Demo ---");
+                    FunctionParametersDemo.Run();
+                    break;
+                case "43":
+                    Console.WriteLine("\n--- Running Optional Parameters Demo ---");
+                    OptionalParametersDemo.Run();
+                    break;
+                case "44":
+                    Console.WriteLine("\n--- Running Named Parameters Demo ---");
+                    NamedParametersDemo.Run();
+                    break;
+                case "45":
+                    Console.WriteLine("\n--- Running Out Parameters Demo ---");
+                    OutParametersDemo.Run();
+                    break;
+                case "46":
+                    Console.WriteLine("\n--- Running Reference Parameters Demo ---");
+                    ReferenceParametersDemo.Run();
+                    break;
+                case "47":
+                    Console.WriteLine("\n--- Running Exercise Area Of Triangle Demo ---");
+                    ExerciseAreaOfTriangleDemo.Run();
+                    break;
+                case "48":
+                    Console.WriteLine("\n--- Running Exercise Sum Of Int Array Demo ---");
+                    ExerciseSumOfIntArrayDemo.Run();
+                    break;
+                case "49":
+                    Console.WriteLine("\n--- Running Exception Handling Demo ---");
+                    ExceptionhandlingDemo.Run();
+                    break;
+                case "50":
+                    Console.WriteLine("\n--- Running Try Catch Demo ---");
+                    TryCatchDemo.Run();
+                    break;
+                case "51":
+                    Console.WriteLine("\n--- Running Printing Error Messages Demo ---");
+                    PrintingErrorMessagesDemo.Run();
+                    break;
+                case "52":
+                    Console.WriteLine("\n--- Running Exercise Custom Try Parse Demo ---");
+                    ExerciseCustomTryParseDemo.Run();
                     break;
                 case "0":
                     Console.WriteLine("Goodbye!");
